@@ -43,7 +43,7 @@ document.location = "staff-m.php";
       pagetitles();
               
  
- $departmentloop_id = array("Senior Managment"=>"1", "Research"=>"2", "Education"=>"3", "Corporate"=>"4");
+ $departmentloop_id = array("Senior Managment"=>"1", "Research"=>"2","Students"=>"3", "Education"=>"4", "Corporate"=>"5", );
     
 foreach($departmentloop_id as $x => $x_value) {
        ?>  
