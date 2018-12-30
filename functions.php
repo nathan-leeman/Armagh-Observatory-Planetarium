@@ -4,43 +4,62 @@
 
 <?php
 
-function connect(){
-    
+function connection(){
+
     include("connection.php");
-    
-    
-    
-    
+
+
+
+
 }
+
+function connectcheck(){
+    include("connection.php");
+    if ($conn->connect_error){
+    die("Connection failed: " . $conn->connect_error);
+
+    }
+
+
+}
+
+
 function navbar() {
     include("connection.php");
+    connectcheck();
     echo"
-
+    
+    
 
     <div class='container'>
    
       <!-- Heading Row -->
+      <div class='row'>
+      <div class='col-12'>
       <img src='/armaghobservatoryplanetarium/img/AOP logo/AOP_logo.jpg' class='img-fluid' alt='Responsive image'>
-     
+     </div>
+     </div>
 
       
 
-          "; 
-    
-   $navquery = "SELECT * FROM navbar";
-        
-   echo "      <div class='row'>  <div class='col-md-16 text-center'>";
-       
-        $navbarresult = mysqli_query($conn, $navquery);
-            
-                while ($row = mysqli_fetch_assoc($navbarresult)){
-                   
-                    $navbarid = $row['navbar_id'];
+          ";
+    $navbarstmt =  $mysqli->prepare("SELECT navbar_name, navbar_hyper FROM navbar");
+    $navbarstmt->execute();
+
+    $navbarresult = $navbarstmt->get_result();
+
+   echo "      <div class='row'>  <div class='col-12 text-center'>";
+
+
+                if($navbarresult->num_rows === 0) exit('No rows');
+                while ($row = $navbarresult->fetch_assoc()){
+
+
                     $navbarname = $row['navbar_name'];
                     $navbarhyper = $row['navbar_hyper'];
-               
-    
-  //Navigation 
+
+
+  //Navigation
                     echo "
                      
   <div class='btn-group  btn-group-lg' role='group' data-spy='affix'>
@@ -57,7 +76,7 @@ function navbar() {
 
 function management_committee_minutes(){
     include("connection.php");
-    
+
     echo "
         <a href='#'>
     <p class='lead' data-toggle='modal' data-target='#exampleModal12'>Management Committee Minutes<p>

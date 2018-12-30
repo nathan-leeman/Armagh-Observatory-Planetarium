@@ -181,7 +181,8 @@ document.location = "index-m.php";
 </p>
     <h1 class='display-4'>Currently Working On:</h1>
     <p class='lead'>
-   
+    Prepared Statements
+   Fixed navbar while scrolling
     Fix staff.php looking stretched on mobile<br>
    Biography - Staff.php - Create template + create a few<br>
       
