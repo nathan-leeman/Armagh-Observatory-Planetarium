@@ -175,12 +175,13 @@ document.location = "index-m.php";
     Created a responsive careers & opportunities section <br>
     Removed redundant tables from the DB <br>
       Fix Dates on Annual Reports + MSFM link opening the wrong modal <br>
-      
-    
+      Education Team - New Photos<br>
+    Group Researchers together + group students together<br>
+    Added Astronotes to navbar + homepage<br>
 </p>
     <h1 class='display-4'>Currently Working On:</h1>
-    <p class='lead'>Education Team - New Photos<br>
-   Group Researchers together + group students together<br>
+    <p class='lead'>
+   
     Fix staff.php looking stretched on mobile<br>
    Biography - Staff.php - Create template + create a few<br>
       

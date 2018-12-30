@@ -75,8 +75,8 @@ FROM staff INNER JOIN dept ON staff.staff_department_id = dept.department_id WHE
                    
                       
 
-                 <div class='card text-center'  >
-                     <img class='card-img-top' src='$staff_img' alt='Card image cap'>
+                 <div class='card text-center'>
+                     <img class='card-img-top-staff' src='$staff_img' alt='Card image cap'>
   <div class='card-body'>
     <div class='card-title staff-names'>$staff_name</div>
     <p class='card-text'>$staff_job_title</p>

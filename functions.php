@@ -16,6 +16,7 @@ function navbar() {
     include("connection.php");
     echo"
 
+
     <div class='container'>
    
       <!-- Heading Row -->
@@ -42,7 +43,8 @@ function navbar() {
   //Navigation 
                     echo "
                      
-  <div class='btn-group  btn-group-lg' role='group'>
+  <div class='btn-group  btn-group-lg' role='group' data-spy='affix'>
+  
     <a class='btn btn-outline-dark' href='$navbarhyper' role='button'>$navbarname</a>
                   </div>
              
@@ -587,10 +589,18 @@ echo "
                 </div>
             </div>
         </div>
+         <div class='social-networks' style='padding-bottom: 0px;'>
+       
+        <a class='text-center' href='https://armaghobservatoryplanetarium.ticketsolve.com/shows?fbclid=IwAR0skRSdBi60Ef_0UbGMG5LFR2hcKZb3ERr11vpQ2juEz-ytW5Ip305a0NM'><img src='img/ticketsolve.png' style='width: 200px; 
+            border-top-left-radius: calc(0.25rem - 1px); border-top-right-radius: calc(0.25rem - 1px);
+             border-bottom-right-radius: calc(0.25rem - 1px);  border-bottom-left-radius: calc(0.25rem - 1px);'></a>
+             </div>
         <div class='social-networks'>
+        
             <a href='https://twitter.com/ArmaghPlanet' class='twitter'><i class='fab fa-twitter' style='margin-top:30px;'></i></a>
             <a href='https://en-gb.facebook.com/armaghplanet/' class='facebook'><i class='fab fa-facebook-f'></i></a>
             <a href='https://armaghplanet.com/blog' class='facebook'><i class='fas fa-space-shuttle'></i><p style='font-size: 20px; font-family: Trattatello; margin-bottom:10px;'>Astronotes</p></a>
+           
             
         </div>
         <div class='footer-copyright'>
