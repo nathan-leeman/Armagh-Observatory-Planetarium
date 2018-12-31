@@ -94,14 +94,20 @@ function management_committee_minutes(){
        <div class='container-fluid'>
        <div class='row'>
         ";
-    
-    
- $cardsquery = "SELECT * FROM management_committee_minutes";
-        
-        $cardsresult = mysqli_query($conn, $cardsquery);
+
+
+$mcmstmt = $mysqli->prepare("SELECT management_com_year, management_com_month, management_com_day, management_com_hyper FROM management_committee_minutes");
+
+$mcmstmt->execute();
+
+$mcmresult = $mcmstmt->get_result();
+
+if($mcmresult->num_rows === 0) exit ('No rows');
+while ($row = $mcmresult->fetch_assoc()){
+
+
             
-                while ($row = mysqli_fetch_assoc($cardsresult)){
-                    
+
                     $mmc_year = $row["management_com_year"];
                     $mmc_month = $row["management_com_month"];
                     $mmc_day = $row["management_com_day"];
@@ -146,19 +152,24 @@ echo "</div>
     
     
     
-    
+
 }
 
 function corporateplan(){
     include("connection.php");
-    $corporateplanquery = "SELECT * FROM corporate_plan";
-        
-        $corporateplanresult = mysqli_query($conn, $corporateplanquery);
-            
-                while ($row = mysqli_fetch_assoc($corporateplanresult)){
-                    
-                    $corporate_plan_id = $row["corporate_plan_id"];
-                    $corporate_plan_title = $row["corporate_plan_title"];
+
+$corporateplanstmt = $mysqli->prepare("SELECT corporate_plan_timeline, corporate_plan_hyper FROM corporate_plan");
+
+$corporateplanstmt->execute();
+
+$corporateplanresult = $corporateplanstmt->get_result();
+
+if($corporateplanresult->num_rows === 0) exit ('No rows');
+while ($row = $corporateplanresult->fetch_assoc()){
+
+
+
+
                     $corporate_plan_timeline = $row["corporate_plan_timeline"];
                     $corporate_plan_hyper = $row["corporate_plan_hyper"];
     
@@ -187,15 +198,18 @@ function managementstatement_financialmem(){
        <div class='container-fluid'>
        <div class='row'>
         ";
-    
-    
- $msfmquery = "SELECT * FROM MSFM";
-        
-        $msfmresult = mysqli_query($conn, $msfmquery);
-            
-                while ($row = mysqli_fetch_assoc($msfmresult)){
-                    
-                    $msfm_id = $row["msfm_id"];
+
+
+$msfmstmt = $mysqli->prepare("SELECT msfm_year, msfm_month, msfm_hyper FROM msfm");
+
+    $msfmstmt->execute();
+
+$msfmresult = $msfmstmt->get_result();
+
+if($msfmresult->num_rows === 0) exit ('No rows');
+while ($row = $msfmresult->fetch_assoc()){
+
+
                     $msfm_year = $row["msfm_year"];
                     $msfm_month = $row["msfm_month"];
                     $msfm_hyper = $row["msfm_hyper"];
@@ -259,15 +273,18 @@ function annualvisitation(){
        <div class='container-fluid'>
        <div class='row'>
         ";
-    
-    
- $govvisitationquery = "SELECT * FROM annual_visitation_governers";
-        
-        $govvisitationresult = mysqli_query($conn, $govvisitationquery);
-            
-                while ($row = mysqli_fetch_assoc($govvisitationresult)){
+
+$govvisitationstmt = $mysqli->prepare("SELECT annual_visitation_governers_year, annual_visitation_governers_month, annual_visitation_governers_hyper, annual_visitation_governers_day FROM annual_visitation_governers");
+
+    $govvisitationstmt->execute();
+
+$govvisitationresult = $govvisitationstmt->get_result();
+
+if($govvisitationresult->num_rows === 0) exit ('No rows');
+while ($row = $govvisitationresult->fetch_assoc()){
+
                     
-                    $gov_visitation_id = $row["annual_visitation_governers_id"];
+
                     $gov_visitation_year = $row["annual_visitation_governers_year"];
                     $gov_visitation_month = $row["annual_visitation_governers_month"];
                     $gov_visitation_hyper = $row["annual_visitation_governers_hyper"];
@@ -310,6 +327,7 @@ echo "</div>
     
     
 }
+
 function annualreports(){
     include("connection.php");
     
@@ -330,15 +348,17 @@ function annualreports(){
        <div class='container-fluid'>
        <div class='row'>
         ";
-    
-    
- $cardsquery = "SELECT * FROM annual_reports";
-        
-        $cardsresult = mysqli_query($conn, $cardsquery);
-            
-                while ($row = mysqli_fetch_assoc($cardsresult)){
-                    
-                    $report_id = $row["annual_report_id"];
+
+        $annualreportstmt = $mysqli->prepare("SELECT annual_report_year, annual_report_hyper FROM annual_reports");
+
+        $annualreportstmt->execute();
+
+        $annualreportresult = $annualreportstmt->get_result();
+
+        if($annualreportresult->num_rows === 0) exit ('No rows');
+        while ($row = $annualreportresult->fetch_assoc()){
+
+
                     $report_card_year = $row["annual_report_year"];
                     $report_card_hyper = $row["annual_report_hyper"];
             
@@ -402,13 +422,18 @@ function businessplan(){
        <div class='container-fluid'>
        <div class='row'>
         ";
-    
-    
- $businessplanquery = "SELECT * FROM business_plan";
-        
-        $businessplanresult = mysqli_query($conn, $businessplanquery);
-            
-                while ($row = mysqli_fetch_assoc($businessplanresult)){
+
+$businessplanstmt = $mysqli->prepare("SELECT bp_year, bp_hyper FROM business_plan");
+
+$businessplanstmt->execute();
+
+$businessplanresult = $businessplanstmt->get_result();
+
+if($businessplanresult->num_rows === 0) exit ('No rows');
+while ($row = $businessplanresult->fetch_assoc()){
+
+
+
                     
                     $bp_year = $row["bp_year"];
                     $bp_hyper = $row["bp_hyper"];
@@ -459,13 +484,18 @@ echo "</div>
 
 function pubscheme_privacynotice(){
     include("connection.php");
-     $pubscheme_privacynoticequery = "SELECT * FROM pubscheme_privacynotice";
-        
-        $pubscheme_privacynoticeresult = mysqli_query($conn, $pubscheme_privacynoticequery);
-            
-                while ($row = mysqli_fetch_assoc($pubscheme_privacynoticeresult)){
-                    
-                    $pubscheme_privacynotice_id = $row["pubscheme_privacynotice_id"];
+
+
+                    $pubscheme_privacynoticestmt = $mysqli->prepare("SELECT pubscheme_privacynotice_title, pubscheme_privacynotice_hyper FROM pubscheme_privacynotice");
+
+    $pubscheme_privacynoticestmt->execute();
+
+    $pubscheme_privacynoticeresult = $pubscheme_privacynoticestmt->get_result();
+
+                    if($pubscheme_privacynoticeresult->num_rows === 0) exit ('No rows');
+                    while ($row = $pubscheme_privacynoticeresult->fetch_assoc()){
+
+
                     $pubscheme_privacynotice_title = $row["pubscheme_privacynotice_title"];
                     $pubscheme_privacynotice_hyper = $row["pubscheme_privacynotice_hyper"];
                     
@@ -679,42 +709,23 @@ function openingtimes(){
      
      
      
-     
-     /* echo "";
-     $opentimesquery = "SELECT * FROM planetarium_open_times";
- 
 
-        $opentimesresult = mysqli_query($conn, $opentimesquery);
-  
-                while ($row = mysqli_fetch_assoc($opentimesresult)){
-                    if (mysqli_num_rows($opentimesresult) > 0 ) {
-                    $planet_times_id = $row['planet_times_id'];
-                    $planet_times_day = $row['planet_times_day'];
-                    $planet_times_open = $row['planet_times_open'];
-          $planet_times_close = $row['planet_times_close'];
-          
-  
-
-                }
-                }*/
 }
 
 function contactdetails(){
     include ("connection.php");
-    ?>
-    
-   
-      
-        <?php
-    
-    
-    
-    $contactquery = "SELECT * FROM contact";
-                $contactresult = mysqli_query($conn, $contactquery);
-                
-                while ($row = mysqli_fetch_assoc($contactresult)){
-                    
-                        $contact_id = $row['contact_id'];
+
+
+$contactdetailsstmt = $mysqli->prepare("SELECT contact_title, contact_telephone, contact_email, contact_info FROM contact");
+
+    $contactdetailsstmt->execute();
+
+$contactdetailsresult = $contactdetailsstmt->get_result();
+
+if($contactdetailsresult->num_rows === 0) exit ('No rows');
+while ($row = $contactdetailsresult->fetch_assoc()){
+
+
                         $contact_title = $row['contact_title'];
                         $contact_number = $row['contact_telephone'];      
                         $contact_email = $row['contact_email'];
@@ -757,37 +768,33 @@ function contactdetails(){
     ";
 }
 }
-    
-function senior_management(){
-    include("connection.php");
-    
-    
-  
-    
- 
-                  
 
-
-}   
 
 
 function pagetitles(){
     include("connection.php");
+
+
+
     $current_file_name = basename($_SERVER['PHP_SELF']);
+
 //echo $current_file_name."\n";
 //
+$pagetitlesstmt = $mysqli->prepare("SELECT page_title FROM page_titles WHERE page_title_link = ?");
+$pagetitlesstmt->bind_param("s", $current_file_name);
+    $pagetitlesstmt->execute();
 
-    $titlequery = "SELECT page_title FROM page_titles WHERE page_title_link = '$current_file_name'";
-        
-        
-    
-    $pagetitleresult = mysqli_query($conn, $titlequery);
-            
-                while ($row = mysqli_fetch_assoc($pagetitleresult)){
-                         if (mysqli_num_rows($pagetitleresult) > 0 ) {
+$pagetitlesresult = $pagetitlesstmt->get_result();
+
+if($pagetitlesresult->num_rows === 0) exit ('No rows');
+    $pagetitlesstmt->bind_result($current_file_name);
+
+while ($row = $pagetitlesresult->fetch_assoc()){
+
+
                     $page_title = $row["page_title"];
-    
-    
+
+
 
 echo "    <div class='card text-white bg-dark my-4 text-center'>
       <div class='card-body'> 
@@ -799,7 +806,7 @@ echo "    <div class='card text-white bg-dark my-4 text-center'>
      }
     
     
-}
+
 
 }
 
