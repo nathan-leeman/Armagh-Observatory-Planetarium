@@ -1,66 +1,44 @@
-# [Start Bootstrap - Small Business](https://startbootstrap.com/template-overviews/small-business/)
+Web development project being undertaken by Nathan Leeman at Armagh Observatory & Planetarium.
 
-[Small Business](http://startbootstrap.com/template-overviews/small-business/) is a responsive marketing landing page template for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/).
+Current Priority before the site goes live week starting 14/01/2019
+---------------------------------------------------------------------
 
-## Preview
+1.	Add Vision Docs - ✓
+2.	Snapchat – Add logo which brings up the Snapcode within a modal
+3.	Education – Sinead’s document for teacher’s/ Add A Level section
+4.	PhD info – Spoken with Gavin about this and I have the documents
+5.  Check Mobile layout across a few different phones again
 
-[![Small Business Preview](https://startbootstrap.com/assets/img/templates/small-business.jpg)](https://blackrockdigital.github.io/startbootstrap-small-business/)
 
-**[View Live Preview](https://blackrockdigital.github.io/startbootstrap-small-business/)**
 
-## Status
+Currently being worked on:
+--------------------------------
+Different Image - About Us Box
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/BlackrockDigital/startbootstrap-small-business/master/LICENSE)
-[![npm version](https://img.shields.io/npm/v/startbootstrap-small-business.svg)](https://www.npmjs.com/package/startbootstrap-small-business)
-[![Build Status](https://travis-ci.org/BlackrockDigital/startbootstrap-small-business.svg?branch=master)](https://travis-ci.org/BlackrockDigital/startbootstrap-small-business)
-[![dependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-small-business/status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-small-business)
-[![devDependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-small-business/dev-status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-small-business?type=dev)
+Add AOP vision documents
 
-## Download and Installation
+Media Release to go on armaghplanet.com/blog
 
-To begin using this template, choose one of the following options to get started:
-* [Download the latest release on Start Bootstrap](https://startbootstrap.com/template-overviews/small-business/)
-* Install via npm: `npm i startbootstrap-small-business`
-* Clone the repo: `git clone https://github.com/BlackrockDigital/startbootstrap-small-business.git`
-* [Fork, Clone, or Download on GitHub](https://github.com/BlackrockDigital/startbootstrap-small-business)
+Fixed navbar while scrolling
 
-## Usage
+Fix staff.php looking stretched on mobile
 
-### Basic Usage
+Biography - Staff.php - Create template + create a few
 
-After downloading, simply edit the HTML and CSS files included with the template in your favorite text editor to make changes. These are the only files you need to worry about, you can ignore everything else! To preview the changes you make to the code, you can open the `index.html` file in your web browser.
+Previous Features implemented:
+--------------------------------
+Added documents to About Section
 
-### Advanced Usage
+Created a responsive careers & opportunities section 
 
-After installation, run `npm install` and then run `gulp dev` which will open up a preview of the template in your default browser, watch for changes to core template files, and live reload the browser when changes are saved. You can view the `gulpfile.js` to see which tasks are included with the dev environment.
+Removed redundant tables from the DB 
 
-You must have npm and Gulp installed globally on your machine in order to use these features.
+Fix Dates on Annual Reports + MSFM link opening the wrong modal 
 
-## Troubleshooting and Help
+Education Team - New Photos
 
-Start Bootstrap has a public Slack channel which is a great place to ask questions about this template and all things related to Start Bootstrap.
+Group Researchers together + group students together
 
-**[Click here to join the Slack channel!](https://startbootstrap-slack.herokuapp.com/)**
+Added Astronotes to navbar + homepage
 
-## Bugs and Issues
-
-Have a bug or an issue with this template? [Open a new issue](https://github.com/BlackrockDigital/startbootstrap-small-business/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/small-business/).
-
-## About
-
-Start Bootstrap is an open source library of free Bootstrap templates and themes. All of the free templates and themes on Start Bootstrap are released under the MIT license, which means you can use them for any purpose, even for commercial projects.
-
-* https://startbootstrap.com
-* https://twitter.com/SBootstrap
-
-Start Bootstrap was created by and is maintained by **[David Miller](http://davidmiller.io/)**, Owner of [Blackrock Digital](http://blackrockdigital.io/).
-
-* http://davidmiller.io
-* https://twitter.com/davidmillerskt
-* https://github.com/davidtmiller
-
-Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
-
-## Copyright and License
-
-Copyright 2013-2018 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-small-business/blob/gh-pages/LICENSE) license.
+Prepared Statements
