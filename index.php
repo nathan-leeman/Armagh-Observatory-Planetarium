@@ -170,24 +170,12 @@ document.location = "index-m.php";
 
 <div class='jumbotron jumbotron-fluid'>
   <div class='container'>
-    <h1 class='display-4'>Recent Changes:</h1>
-    <p class='lead'>Added documents to About Section<br>
-    Created a responsive careers & opportunities section <br>
-    Removed redundant tables from the DB <br>
-      Fix Dates on Annual Reports + MSFM link opening the wrong modal <br>
-      Education Team - New Photos<br>
-    Group Researchers together + group students together<br>
-    Added Astronotes to navbar + homepage<br>
-</p>
-    <h1 class='display-4'>Currently Working On:</h1>
-    <p class='lead'>
-    Prepared Statements
-   Fixed navbar while scrolling
-    Fix staff.php looking stretched on mobile<br>
-   Biography - Staff.php - Create template + create a few<br>
-      
-  <br>
-    </p>
+   <a href='https://nathan-leeman.github.io/Armagh-Observatory-Planetarium/'> 
+    <h1 class='display-4 text-center'>Click me for updates about the sites development</h1>
+    
+     </a>
+  
+    
   </div>
 </div>
 

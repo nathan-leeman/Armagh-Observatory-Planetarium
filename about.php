@@ -108,7 +108,18 @@ echo "
   </div>
 </div>
 
+<div class='jumbotron'>
+  <div class='container'>
+    <h1 class='display-4'>AOP Vision</h1>
+    ";
+    vision_documents();
+    
+echo "
+    
 
+
+  </div>
+</div>
 
 
 

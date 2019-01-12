@@ -712,6 +712,42 @@ function openingtimes(){
 
 }
 
+function vision_documents(){
+    include("connection.php");
+
+    $visiondocumentstmt = $mysqli->prepare("SELECT vision_docs_title, vision_docs_description, vision_docs_hyper FROM vision_docs");
+
+    $visiondocumentstmt->execute();
+
+    $visiondocumentresult = $visiondocumentstmt->get_result();
+
+
+
+if($visiondocumentresult->num_rows === 0) exit ('No rows');
+while ($row = $visiondocumentresult->fetch_assoc()) {
+
+
+    $vision_docs_title = $row['vision_docs_title'];
+    $vision_docs_description = $row['vision_docs_description'];
+    $vision_docs_hyper = $row['vision_docs_hyper'];
+
+    echo "<hr class='my-4'>
+<a href='$vision_docs_hyper'>
+            $vision_docs_title</a> $vision_docs_description
+          
+
+
+
+
+
+
+";
+}
+}
+
+
+
+
 function contactdetails(){
     include ("connection.php");
 
