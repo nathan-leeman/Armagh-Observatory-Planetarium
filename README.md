@@ -1,7 +1,7 @@
 Web development project being undertaken by Nathan Leeman at Armagh Observatory & Planetarium.
 
 Currently being worked on:
-
+--------------------------------
 Different Image - About Us Box
 <br>
 Add AOP vision documents
@@ -15,7 +15,7 @@ Fix staff.php looking stretched on mobile
 Biography - Staff.php - Create template + create a few
 
 Previous Features implemented:
-
+--------------------------------
 Added documents to About Section
 
 Created a responsive careers & opportunities section 
