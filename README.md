@@ -3,7 +3,7 @@ Web development project being undertaken by Nathan Leeman at Armagh Observatory 
 Currently being worked on:
 
 Different Image - About Us Box
-
+<br>
 Add AOP vision documents
 
 Media Release to go on armaghplanet.com/blog
