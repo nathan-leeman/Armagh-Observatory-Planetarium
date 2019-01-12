@@ -3,7 +3,7 @@ Web development project being undertaken by Nathan Leeman at Armagh Observatory 
 Current Priority before the site goes live week starting 14/01/2019
 ---------------------------------------------------------------------
 
-1.	Add Vision Docs
+1.	Add Vision Docs - ✓
 2.	Snapchat – Add logo which brings up the Snapcode within a modal
 3.	Education – Sinead’s document for teacher’s/ Add A Level section
 4.	PhD info – Spoken with Gavin about this and I have the documents
