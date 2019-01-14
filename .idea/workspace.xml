@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8c96fae9-565e-49c2-9f11-867b5ada9484" name="Default Changelist" comment="Changed all SQL statements in functions.php to use prepared statements">
+    <list default="true" id="8c96fae9-565e-49c2-9f11-867b5ada9484" name="Default Changelist" comment="Added Vision Documents">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/about.php" beforeDir="false" afterPath="$PROJECT_DIR$/about.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/careerpost.php" beforeDir="false" afterPath="$PROJECT_DIR$/careerpost.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/careers&amp;opportunities.php" beforeDir="false" afterPath="$PROJECT_DIR$/careers&amp;opportunities.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,17 +36,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/careers&amp;opportunities.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1292">
-              <caret line="76" selection-start-line="76" selection-end-line="76" />
+            <state relative-caret-position="493">
+              <caret line="74" column="50" selection-start-line="74" selection-start-column="50" selection-end-line="74" selection-end-column="50" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/careerpost.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="561">
+              <caret line="60" column="54" selection-start-line="60" selection-start-column="54" selection-end-line="60" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="711" lean-forward="true" selection-start-line="711" selection-end-line="711" />
+            <state relative-caret-position="148">
+              <caret line="716" selection-start-line="716" selection-end-line="716" />
             </state>
           </provider>
         </entry>
@@ -123,6 +132,8 @@
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/about.php" />
         <option value="$PROJECT_DIR$/functions.php" />
+        <option value="$PROJECT_DIR$/careers&amp;opportunities.php" />
+        <option value="$PROJECT_DIR$/careerpost.php" />
       </list>
     </option>
   </component>
@@ -194,7 +205,7 @@
       <updated>1545390717004</updated>
       <workItem from="1545390721210" duration="3538000" />
       <workItem from="1545407040650" duration="32326000" />
-      <workItem from="1546509945663" duration="8330000" />
+      <workItem from="1546509945663" duration="10983000" />
     </task>
     <task id="LOCAL-00001" summary="Updated Education photos to include new uniforms. Grouped Researchers and Students together. Changed the database to include the changed values in the dept table in order to rearrange the Researchers and Students photo positions.">
       <created>1546120301753</created>
@@ -224,11 +235,18 @@
       <option name="project" value="LOCAL" />
       <updated>1546219411470</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added Vision Documents">
+      <created>1547317927398</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1547317927398</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44194000" />
+    <option name="totallyTimeSpent" value="46847000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
@@ -265,20 +283,14 @@
     <MESSAGE value="Group Researchers together &amp; group students together - Staff.php photos&#10;Added Astronotes to navbar + homepage&#10;Added ticketsolve to the social links at the bottom of the page&#10;Attempted to fix mobile problems (Unsuccessful)" />
     <MESSAGE value="Prepared Statements:&#10;&#10;Function navbar() updated to use prepared statement to query database&#10;.gitignore updated to ignore the new mysqli variable created to make prepared statements function" />
     <MESSAGE value="Changed all SQL statements in functions.php to use prepared statements" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed all SQL statements in functions.php to use prepared statements" />
+    <MESSAGE value="Added Vision Documents" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Vision Documents" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/connect2/mysqli_connect.php" />
-    <entry file="file://$PROJECT_DIR$/careers&amp;opportunities.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1292">
-          <caret line="76" selection-start-line="76" selection-end-line="76" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/staff-m.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1309">
@@ -330,8 +342,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/functions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="711" lean-forward="true" selection-start-line="711" selection-end-line="711" />
+        <state relative-caret-position="148">
+          <caret line="716" selection-start-line="716" selection-end-line="716" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/careers&amp;opportunities.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="74" column="50" selection-start-line="74" selection-start-column="50" selection-end-line="74" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/careerpost.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="60" column="54" selection-start-line="60" selection-start-column="54" selection-end-line="60" selection-end-column="54" />
         </state>
       </provider>
     </entry>

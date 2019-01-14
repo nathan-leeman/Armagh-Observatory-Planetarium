@@ -71,8 +71,9 @@ echo "
   <div class='container'>
     <h1 class='display-4'>$career_title</h1>
      <hr class='my-4'>
+     
+     <p class='lead'>$career_brief_description</p>
      <p class='lead'>Salary: $career_salary</p>
-     <p class='lead'>Description: $career_brief_description
      <p class='lead'>Closing Date: $career_closing_date</p>     
 
 <a href='careerpost.php?id=$career_id'>

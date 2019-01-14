@@ -57,8 +57,9 @@ echo "
   <div class='container'>
     <h1 class='display-4'>$career_title</h1>
      <hr class='my-4'>
+     
+     <p class='lead'>$career_full_description</p> <br>
      <p class='lead'>Salary: $career_salary</p>
-     <p class='lead'>Description: $career_full_description
      <p class='lead'>Closing Date: $career_closing_date</p>     
 
 
