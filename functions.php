@@ -645,7 +645,38 @@ echo "
              border-bottom-right-radius: calc(0.25rem - 1px);  border-bottom-left-radius: calc(0.25rem - 1px);'></a>
              </div>
         <div class='social-networks'>
-        
+           </a>
+            
+            
+            <!-- Button trigger modal -->
+ <a href='' class='facebook' data-toggle='modal' data-target='#snapchatmodalcenter'> <i class='fab fa-snapchat-ghost'></i> </a>
+  
+
+<!-- Modal -->
+<div class='modal fade' id='snapchatmodalcenter' tabindex='-1' role='dialog' aria-labelledby='snapchatmodalcenterTitle' aria-hidden='true'> 
+  <div class='modal-dialog modal-dialog-centered' role='document'>
+    <div class='modal-content'>
+      <div class='modal-header'>
+        <h4 class='modal-title' id='snapchatmodalcenterTitle'>Add us on Snapchat!</h4>
+        <button type='button' class='close' data-dismiss='modal' aria-label='Close'>
+          <span aria-hidden='true'>&times;</span>
+        </button>
+      </div>
+      <div class='modal-body'>
+       <img src='img/snapcode.jpg' style='width: 450px; height: 400px;'>
+      </div>
+      
+    </div>
+  </div>
+</div>
+            
+            
+            
+            
+            
+            
+            
+            
             <a href='https://twitter.com/ArmaghPlanet' class='twitter'><i class='fab fa-twitter' style='margin-top:30px;'></i></a>
             <a href='https://en-gb.facebook.com/armaghplanet/' class='facebook'><i class='fab fa-facebook-f'></i></a>
             <a href='https://armaghplanet.com/blog' class='facebook'><i class='fas fa-space-shuttle'></i><p style='font-size: 20px; font-family: Trattatello; margin-bottom:10px;'>Astronotes</p></a>
@@ -658,8 +689,8 @@ echo "
     </footer>
       
     ";
-    
-    
+
+
     
     
     
