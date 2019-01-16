@@ -630,7 +630,8 @@ echo "
                 <div class='col-sm-3 myCols'>
                     <h5>Legal</h5>
                     <ul>
-             <li><a href='#'>Publication Scheme & Privacy Notices</a></li>
+             <li><a href='#'><a href='careers/Education/risk_assessment.pdf'> Risk Assessment</a></li>
+     <li> <a href='careers/Education/teacher_checklist.pdf'> Teacher Checklist</a></li>
                 <!--          <li><a href='foi.php'>Terms of Service</a></li>
                         <li><a href='toi.php'>Policy 2</a></li>
                    <li><a href='privacy.php'>Privacy Policy</a></li> -->
@@ -742,6 +743,10 @@ function openingtimes(){
      
 
 }
+
+
+
+
 
 function vision_documents(){
     include("connection.php");
