@@ -95,10 +95,88 @@ echo "
     <p class='lead'>Read our recruitment policy here </p>
   </div>
 </div>
-  ";
-  ?> 
-           
+
+
+<div class='jumbotron'>
+  <div class='container'>
+    <h1 class='display-4'>Courses</h1>
+      <hr class='my-4'>
   </div>
+</div>
+
+<div class='jumbotron'>
+  <div class='container'>
+    <h1 class='display-4'>A Level - Physics Astronomy Course</h1>
+
+";
+
+
+    $coursesstmt = $mysqli->prepare("SELECT courses_temp_week_number ,courses_temp_week_date, courses_temp_lecture_notes, courses_temp_presentation,
+    courses_temp_workshop_tutorial, courses_temp_exercise_sheets FROM courses_temp");
+
+    $coursesstmt->execute();
+
+    $coursesresult = $coursesstmt->get_result();
+
+    if($coursesresult->num_rows === 0) exit ('No rows');
+    while ($row = $coursesresult->fetch_assoc()){
+
+        $courses_week_number = $row['courses_temp_week_number'];
+        $courses_week_date = $row['courses_temp_week_date'];
+
+        $courses_lecture_notes = $row['courses_temp_lecture_notes'];
+        $courses_presentation = $row['courses_temp_presentation'];
+        $courses_workshop_tutorial = $row['courses_temp_workshop_tutorial'];
+
+        $courses_exercise_sheets = $row['courses_temp_exercise_sheets'];
+
+
+
+
+
+
+
+echo "
+
+
+
+      <hr class='my-4'>
+      <h3> Week $courses_week_number: $courses_week_date</h3>
+      
+     <p class='lead'>$courses_lecture_notes</p>
+       <p class='lead'>$courses_presentation</p>
+       <p class='lead'>$courses_workshop_tutorial</p>
+       <p class='lead'>$courses_exercise_sheets</p>
+      
+      
+      
+      
+  
+
+
+  ";
+    }
+
+
+    echo "</div>
+          </div>";
+
+    ?>
+
+
+          
+          
+          
+          
+
+
+
+
+  </div>
+
+
+
+
          <?php
   footer();
          
