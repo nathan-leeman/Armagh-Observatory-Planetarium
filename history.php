@@ -25,7 +25,7 @@ include("connection.php");
       <script type="text/javascript">
 
 if (screen.width <= 600) {
-document.location = "history-m.php";
+document.location = "history-touch.php";
 }
 
 </script>
@@ -44,64 +44,26 @@ document.location = "history-m.php";
               
               <?php
               
-              $histcardquery = "SELECT * FROM hist_cards";
-        
-      
-        
-        $histcardresult = mysqli_query($conn, $histcardquery);
-            
-                while ($row = mysqli_fetch_assoc($histcardresult)){
-                    
+              $historycardstmt = $mysqli->prepare("SELECT hist_card_id, hist_card_img_f, hist_card_img_b, hist_card_img_button, hist_card_img_hyper, hist_card_fronttext FROM hist_cards");
+
+              $historycardstmt->execute();
+
+              $historycardresult = $historycardstmt->get_result();
+
+              if($historycardresult->num_rows === 0) exit ('No rows');
+              while ($row = $historycardresult->fetch_assoc()){
+
+
+
+
                     $hist_card_id = $row["hist_card_id"];
                     $hist_card_frontimg = $row["hist_card_img_f"];
                    $hist_card_backimg = $row["hist_card_img_b"];
                    $hist_card_button = $row["hist_card_img_button"];
               $hist_card_hyper = $row["hist_card_img_hyper"];
               $hist_card_fronttext = $row["hist_card_fronttext"];
-              ?>   
-       <!--    <div class='col-6'>
- <div class='image-flip'  ontouchstart='this.classList.toggle('hover');'> 
-    
-    
-    
-<div class='mainflip'>
-<div class='frontside'>
-<div class='card' style='width:35rem;'>
-<img class='card-img-top img- fluid' src='$hist_card_frontimg' alt='card image'>
-<div class='card-body'>
-<h4 class='card-title text-center'>$hist_card_fronttext</h4>
 
-</div>
-</div>
-</div>
-<div class='backside'>
-<div class='card' style='width:35rem;'>
-<img class='card-img-top img- fluid' src='$hist_card_backimg' alt='card image'>
-<div class='card-body'>
-
-<a href='$hist_card_hyper' class='btn btn-info btn-md'>$hist_card_button</a>
-</div>
-
-</div>
-</div>
-</div>
-</div></div>  
-
-
-CLOSING DIV FOR CONTAINER -- SEE THE FUNCTION navbar() TO SEE THE PLACEMENT
-  OF CONTAINER DIV
-  
-
-
-
-
-
-       
---> 
-
-
-
-<?php echo "
+              echo "
    
     <div class='col-6'>
     
@@ -140,7 +102,7 @@ CLOSING DIV FOR CONTAINER -- SEE THE FUNCTION navbar() TO SEE THE PLACEMENT
       
       
    
-     
+
  </div>
       </div>
       <?php

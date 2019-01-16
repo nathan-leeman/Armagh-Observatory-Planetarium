@@ -25,7 +25,6 @@ include("connection.php");
     <script type="text/javascript">
 
 
-
     </script>
 
 </head>
@@ -42,35 +41,35 @@ pagetitles();
 
     <?php
 
-    $historycardstmt = $mysqli->prepare("SELECT hist_card_id, hist_card_img_f, hist_card_img_b, hist_card_img_button, hist_card_img_hyper, hist_card_fronttext FROM hist_cards");
+    $historycardstmt2 = $mysqli->prepare("SELECT hist_card_img_f, hist_card_img_hyper, hist_card_fronttext FROM hist_cards");
 
-    $historycardstmt->execute();
+    $historycardstmt2->execute();
 
-    $historycardresult = $historycardstmt->get_result();
+    $historycardresult2 = $historycardstmt2->get_result();
 
-    if($historycardresult->num_rows === 0) exit ('No rows');
-    while ($row = $historycardresult->fetch_assoc()){
-
-
+    if($historycardresult2->num_rows === 0) exit ('No rows');
+    while ($row = $historycardresult2->fetch_assoc()){
 
 
-        $hist_card_id = $row["hist_card_id"];
-        $hist_card_frontimg = $row["hist_card_img_f"];
-        $hist_card_backimg = $row["hist_card_img_b"];
-        $hist_card_button = $row["hist_card_img_button"];
-        $hist_card_hyper = $row["hist_card_img_hyper"];
-        $hist_card_fronttext = $row["hist_card_fronttext"];
+
+
+
+        $hist_card_frontimg2 = $row["hist_card_img_f"];
+
+
+        $hist_card_hyper2 = $row["hist_card_img_hyper"];
+        $hist_card_fronttext2 = $row["hist_card_fronttext"];
 
         echo "
    
     <div class='col-12'>
     
-    <a href='$hist_card_hyper'> 
+    <a href='$hist_card_hyper2'> 
         <div class='card'>
-            <img class='card-img-top img-responsive' src='$hist_card_frontimg' alt='card image'>
+            <img class='card-img-top img-responsive' src='$hist_card_frontimg2' alt='card image'>
 <div class='card-body'>
 
-<h4 class='card-title text-center'>$hist_card_fronttext</h4>
+<h4 class='card-title text-center'>$hist_card_fronttext2</h4>
 
 </div>
 
