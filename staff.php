@@ -27,7 +27,7 @@ include("connection.php");
     <script type="text/javascript">
 
 if (screen.width <= 600) {
-document.location = "staff-m.php";
+document.location = "staff-touch.php";
 }
 
 </script>

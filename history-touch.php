@@ -33,7 +33,6 @@ include("connection.php");
 
 <?php
 navbar();
-pagetitles();
 ?>
 
 <div class="row">

@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c96fae9-565e-49c2-9f11-867b5ada9484" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/underconstruction.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/careers&amp;opportunities.php" beforeDir="false" afterPath="$PROJECT_DIR$/careers&amp;opportunities.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/history-m.php" beforeDir="false" />
@@ -250,7 +249,7 @@
       <workItem from="1546509945663" duration="36447000" />
       <workItem from="1548150735577" duration="598000" />
       <workItem from="1548151500923" duration="1071000" />
-      <workItem from="1548155416152" duration="219000" />
+      <workItem from="1548155416152" duration="477000" />
     </task>
     <task id="LOCAL-00001" summary="Updated Education photos to include new uniforms. Grouped Researchers and Students together. Changed the database to include the changed values in the dept table in order to rearrange the Researchers and Students photo positions.">
       <created>1546120301753</created>
@@ -329,11 +328,18 @@
       <option name="project" value="LOCAL" />
       <updated>1547630076671</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Added an under construction page to replace climate until it is online. This will be used for multiple areas of the site until they are ready to go live.">
+      <created>1548155811931</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1548155811931</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74199000" />
+    <option name="totallyTimeSpent" value="74457000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
@@ -377,7 +383,8 @@
     <MESSAGE value="Added A-Level Course in Astronomy" />
     <MESSAGE value="Added Teacher Checklist and Risk Assessment Forms to footer" />
     <MESSAGE value="Trying to fix the &quot;no rows&quot; message on the mobile version of the history pages. From now on I am going to replace any mobile pages that need created with the -touch.php link instead of -m.php. First noticed this when using facebooks messenger site. It appears as touch.messenger which is a lot more modern" />
-    <option name="LAST_COMMIT_MESSAGE" value="Trying to fix the &quot;no rows&quot; message on the mobile version of the history pages. From now on I am going to replace any mobile pages that need created with the -touch.php link instead of -m.php. First noticed this when using facebooks messenger site. It appears as touch.messenger which is a lot more modern" />
+    <MESSAGE value="Added an under construction page to replace climate until it is online. This will be used for multiple areas of the site until they are ready to go live." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added an under construction page to replace climate until it is online. This will be used for multiple areas of the site until they are ready to go live." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/connect2/mysqli_connect.php" />

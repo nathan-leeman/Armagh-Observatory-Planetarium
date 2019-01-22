@@ -4,12 +4,14 @@
 //declare password
 
 include("functions.php");
-include("connection.php")
+include("connection.php");
+
+
 ?>
   <head>
 
     <meta charset="utf-8">
-    <meta name="viewport" content="width=300, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -22,7 +24,9 @@ include("connection.php")
     <link href="css/small-business.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css"/>
-    
+    <script type="text/javascript">
+
+</script>
 
   </head>
 
@@ -32,18 +36,18 @@ include("connection.php")
           <?php 
              
       navbar();
-      pagetitles();
+
               
  
- $departmentloop_id = array("Senior Managment"=>"1", "Research"=>"2", "Education"=>"3", "Corporate"=>"4");
+ $departmentloop_id2 = array("Senior Managment"=>"1", "Research"=>"2","Students"=>"3", "Education"=>"4", "Corporate"=>"5");
     
-foreach($departmentloop_id as $x => $x_value) {
+foreach($departmentloop_id2 as $x2 => $x_value2) {
        ?>  
         <div class="row"> <?php
                
                echo "
     <div class='col-12'>
-                       <h4 class='card-title text-center' data-aos='fade-down' data-aos-anchor-placement='top-bottom'>$x</h4>
+                       <h4 class='card-title text-center' data-aos='fade-down' data-aos-anchor-placement='top-bottom'>$x2</h4>
                </div>
                ";
                
@@ -53,39 +57,42 @@ foreach($departmentloop_id as $x => $x_value) {
                ?> </div>
             
             <?php
-  $seniormanagementquery = "SELECT staff.staff_id, staff.staff_img, staff.staff_name, staff.staff_job_title, staff.staff_department_id, dept.department_id, dept.department, staff.staff_hyperlink 
-FROM staff INNER JOIN dept ON staff.staff_department_id = dept.department_id WHERE dept.department_id = $x_value ORDER BY `staff`.`staff_id` ASC";
+  $seniormanagementquery2 = "SELECT staff.staff_id, staff.staff_img, staff.staff_name, staff.staff_job_title, staff.staff_department_id, dept.department_id, dept.department, staff.staff_hyperlink 
+FROM staff INNER JOIN dept ON staff.staff_department_id = dept.department_id WHERE dept.department_id = $x_value2 ORDER BY `staff`.`staff_id` ASC";
 
-  $seniormanagementresult = mysqli_query($conn, $seniormanagementquery);
+  $seniormanagementresult2 = mysqli_query($conn, $seniormanagementquery2);
   
-  echo "            ";
+  echo "     <div class='row'>       ";
                  
-    while ($row = mysqli_fetch_assoc($seniormanagementresult)){
-        if (mysqli_num_rows($seniormanagementresult) > 0 ) {
-        $staff_id = $row["staff_id"];
-        $staff_img = $row["staff_img"];
-        $staff_name = $row["staff_name"];
-        $staff_job_title = $row["staff_job_title"];
-        $staff_department = $row["department"];
-        $staff_hyperlink = $row["staff_hyperlink"];
+    while ($row2 = mysqli_fetch_assoc($seniormanagementresult2)){
+        if (mysqli_num_rows($seniormanagementresult2) > 0 ) {
+        $staff_id2 = $row2["staff_id"];
+        $staff_img2 = $row2["staff_img"];
+        $staff_name2 = $row2["staff_name"];
+        $staff_job_title2 = $row2["staff_job_title"];
+        $staff_department2 = $row2["department"];
+        $staff_hyperlink2 = $row2["staff_hyperlink"];
         
          echo "          
-              <div class='row'>
-                        <div class='col-12'>
+              <div class='col-2'>
+              </div>
+                        <div class='col-8'>
                    
                       
 
-                 <div class='card text-center'>
-                     <img class='card-img-top-staff' src='$staff_img' alt='Card image cap'>
+                 <div class='card text-center'  >
+                     <img class='card-img-top' src='$staff_img2' alt='Card image cap'>
   <div class='card-body'>
-    <div class='card-title staff-names'>$staff_name</div>
-    <p class='card-text'>$staff_job_title</p>
+    <div class='card-title staff-names'>$staff_name2
+    </div>
+    <p class='card-text'>$staff_job_title2</p>
                  
-               </div>   </div> </div> </div>  ";
+                  </div> </div> </div> <div class='col-2'>
+              </div>   ";
  
     }}
     
-    echo "       ";
+    echo "   </div>   ";
 }
     
 
