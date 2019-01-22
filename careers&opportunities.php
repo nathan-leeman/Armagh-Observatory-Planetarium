@@ -92,7 +92,7 @@ echo "
    <div class='jumbotron'>
   <div class='container'>
     <h1 class='display-4'>Recruitment Policy</h1>
-    <p class='lead'>Read our recruitment policy here </p>
+    <p class='lead'>To be added soon</p>
   </div>
 </div>
 
@@ -167,7 +167,7 @@ echo "
           
           
           
-          
+
 
 
 
