@@ -1,5 +1,12 @@
 Web development project being undertaken by Nathan Leeman at Armagh Observatory & Planetarium.
 
+WHEN LIVE
+----------------------------------
+CLIMATE - BROUGHT ONLINE INTERNALLY - NEEDS EXTERNAL SUBDOMAIN - CLIMATE.ARMAGH.AC.UK
+Created "Under Construction" site. 
+Fix loading times - Google Analytics suggested we can save 5 seconds of load time
+Cookie Policy? - Document possibly needed Avi having a look at this
+
 Current Priority before the site goes live week starting 14/01/2019
 ---------------------------------------------------------------------
 
