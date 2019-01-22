@@ -197,9 +197,9 @@ echo "</div>
     <h1 class='display-4'>Student Applications
 </h1>
 <hr class='my-4'>
-   <p>We offer positions for PHD students at Armagh Observatory. However this years applications have already been selected and starting their new term. 
+   <p>We offer positions for PHD students at Armagh Observatory.  
 
-Application information for 2019 will be made available <a href='careers&opportunities.php'> here</a> soon.</p>
+Application information for 2019 are available <a href='careers&opportunities.php'> here</a></p>
       
 </div>
 </div>
