@@ -26,7 +26,7 @@ Current Priority before the site goes live week starting 14/01/2019
 Sidenote:
 
 function pagetitles();
-causing problems with mobiles loading rows from tables so I removed the method from these pages. Need to replace this function as it's pointless really and create a new layout standard for each title
+causing problems with mobiles loading rows from tables so I removed the method from these pages. Need to replace this function as it's pointless really and create a new title layout standard for each title
 
 Currently being worked on:
 --------------------------------
