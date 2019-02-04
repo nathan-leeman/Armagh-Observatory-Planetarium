@@ -13,6 +13,27 @@ Cookie Policy? - Document possibly needed Avi having a look at this
 arm.ac.uk redirect to armagh.ac.uk
 Changed image sizes - Speed Tests improved. Upload screenshots.
 
+
+
+
+04/02/2019
+
+Removed "whatever" appearing in search results as this was due to the an alt tag that hadn't been named correctly from the source of who created the template used.
+
+####OLD ARMAGH SITE####
+old.armagh.ac.uk pointing to odin page - Get code or blacknight to fix.
+Blacknight contacted
+
+####ARMAGHPLANET####
+armaghplanet.com - Code found. On Alienware PC. Backup code. Get FTP details.
+Create new pricing section on armagh.ac.uk
+Redirect armaghplanet.com pricing section to armagh.ac.uk pricing section.
+
+####Climate####
+Working internally
+Waiting for meeting to decide whether the old site stays or gets redesigned.
+Uses absolute addressing = Disaster
+
 Current Priority before the site goes live week starting 14/01/2019
 ---------------------------------------------------------------------
 
