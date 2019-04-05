@@ -44,7 +44,7 @@ document.location = "staff-touch.php";
               
  
  $departmentloop_id = array("Senior Managment"=>"1", "Research"=>"2","Students"=>"3", "Education"=>"4", "Corporate"=>"5", );
-    
+
 foreach($departmentloop_id as $x => $x_value) {
        ?>  
         <div class="row"> <?php
@@ -62,7 +62,7 @@ foreach($departmentloop_id as $x => $x_value) {
             
             <?php
   $seniormanagementquery = "SELECT staff.staff_id, staff.staff_img, staff.staff_name, staff.staff_job_title, staff.staff_department_id, dept.department_id, dept.department, staff.staff_hyperlink 
-FROM staff INNER JOIN dept ON staff.staff_department_id = dept.department_id WHERE dept.department_id = $x_value ORDER BY `staff`.`staff_id` ASC";
+FROM staff INNER JOIN dept ON staff.staff_department_id = dept.department_id WHERE dept.department_id = $x_value ORDER BY `staff`.`staff_name` ASC";
 
   $seniormanagementresult = mysqli_query($conn, $seniormanagementquery);
   

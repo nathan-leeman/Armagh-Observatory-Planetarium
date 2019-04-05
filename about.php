@@ -43,15 +43,41 @@ echo "
 </div>
 </a>
 
+";
 
+echo "
+<div class='jumbotron'>
+  <div class='container'>
+    <h1 class='display-4'>AOP Vision</h1>
+    ";
+    vision_documents();
+
+echo "
+    
+
+
+  </div>
+</div>
+
+
+";
+
+
+echo "
 
      <div class='jumbotron'>
   <div class='container'>
     <h1 class='display-4'>Governance Structure</h1>
     <hr class='my-4'>
-  ";
+    ";
 
-annualreports();
+          annualreports();
+    
+    
+  
+
+
+
 
 echo "
 
@@ -108,18 +134,7 @@ echo "
   </div>
 </div>
 
-<div class='jumbotron'>
-  <div class='container'>
-    <h1 class='display-4'>AOP Vision</h1>
-    ";
-    vision_documents();
-    
-echo "
-    
 
-
-  </div>
-</div>
 
 
 

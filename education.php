@@ -1,12 +1,3 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: nathan.leeman
- * Date: 22/01/2019
- * Time: 10:26
- */
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <?php
@@ -15,7 +6,7 @@
 include("functions.php");
 include("connection.php")
 ?>
-  <head>
+<head>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -33,76 +24,74 @@ include("connection.php")
     <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css"/>
 
 
-  </head>
+</head>
 
-  <body>
+<body>
 
 
-          <?php
-                navbar();
+<?php
+navbar();
 
-echo " 
- 
-   <div class='jumbotron'  style='margin-top:40px;' data-aos='fade-right'>
+echo "
+<div class='jumbotron' style='margin-top: 10px;'>
+
   <div class='container'>
-    <h1 class='display-4'>This section of the site is currently under construction</h1>
-        
-        <p class='lead'>
-        Check out the rest of our site or come for a visit!     
-                    
-                    
-
-              </p>
-   
-              
-
-              
-
+    <h1 class='display-4'>Education/Outreach
+</h1>
+<hr class='my-4'>
 
  
- 
 
 
+  
 
-  </div>
 </div>
- 
- 
- 
- 
- 
- 
- 
- 
- 
- ";
+</div>
 
 
-  ?>
+<div class='jumbotron' style='margin-top: 10px;'>
 
-  </div>
-         <?php
-  footer();
+  <div class='container'>
+  <a href='https://armaghop.sharepoint.com/:f:/s/A-LevelPhysics/EjBx8OQmRbBOlVinxA0ClSABPIzsDvekpdqeTzc03AhyVg?e=ZO7MfH'>
+  <h1 class='display-4'>A Level - Physics Astronomy Course
+</h1>
+    
 
-         ?>
+
+ </a>
 
 
+  
 
+</div>
+</div>
 
 
 
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-  </body>
+
+
+";
+
+?>
+
+</div>
+<?php
+footer();
+
+?>
+
+
+
+
+
+
+
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
 
 </html>
-
-
-
-
-
-
-

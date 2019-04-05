@@ -49,8 +49,9 @@ echo "
 
 ";
 
+
 $careersquery = "SELECT * FROM careers_opport";
-        
+
         $careersresult = mysqli_query($conn, $careersquery);
         
                 while ($row = mysqli_fetch_assoc($careersresult)){
@@ -87,7 +88,7 @@ echo "
 "; 
 
                 }
-                
+                /*
                 echo "
    <div class='jumbotron'>
   <div class='container'>
@@ -172,12 +173,12 @@ echo "
 
 
 
-  </div>
 
 
+*/
 
+echo " </div>";
 
-         <?php
   footer();
          
          ?>

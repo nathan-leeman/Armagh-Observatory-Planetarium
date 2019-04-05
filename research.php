@@ -117,7 +117,7 @@ echo "</div>
         
 
 
-<div class='col-6'>
+<div class='col-12'>
 
 <a href='$research_card_hyperlink'>
 
@@ -144,48 +144,7 @@ echo "</div>
       ?>
       
      
-      
- <!--   <div class="row justify-content-center">
-    <div class="col-md-8">
-        <div class="row">
-            <img src="" alt=""/> <a href="img/research/Artist’s_impression_of_merging_neutron_starsESO_Calçada_Kornmesser.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
-                <img src="img/research/Artist’s_impression_of_merging_neutron_starsESO_Calçada_Kornmesser.jpg" class="img-fluid">
-            </a>
-          
-            <a href="img/research/CSIRO_ScienceImage_11145_The_22m_Mopra_radio_telescope.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
-                <img src="img/research/CSIRO_ScienceImage_11145_The_22m_Mopra_radio_telescope.jpg" class="img-fluid">
-            </a>
-            
-            <a href="img/research/Comet_67P_on_19_September_2014_NavCam_mosaic-ESA-Rosetta.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
-                <img src="img/research/Comet_67P_on_19_September_2014_NavCam_mosaic-ESA-Rosetta.jpg" class="img-fluid">
-            </a>
-        </div>
-        <div class="row" style="margin-bottom: 50px;">
-          
-            <a href="img/research/Grand_star-forming_region_R136_in_NGC_2070_HST-ESA.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
-                <img src="img/research/Grand_star-forming_region_R136_in_NGC_2070_HST-ESA.jpg" class="img-fluid">
-            </a>
-            <a href="img/research/fornax-cluster_ESO-DSS-deMartin.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
-                <img src="img/research/fornax-cluster_ESO-DSS-deMartin.jpg" class="img-fluid">
-            </a>
-           
-            <a href="img/research/goto-dome-night.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
-                <img src="img/research/goto-dome-night.jpg" class="img-fluid">
-            </a>
-        </div>
-    </div>
-</div>
-      
-    <script>
-      
- $(document).on('click', '[data-toggle="lightbox"]', function(event) {
-                event.preventDefault();
-                $(this).ekkoLightbox();
-            });
-     
-   </script>
-      
-      -->
+
    <?php
       
       

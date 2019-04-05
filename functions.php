@@ -24,6 +24,10 @@ function connectcheck(){
 }
 
 
+
+
+
+
 function navbar() {
     include("connection.php");
     connectcheck();
@@ -36,7 +40,7 @@ function navbar() {
       <!-- Heading Row -->
       <div class='row'>
       <div class='col-12'>
-      <img src='/armaghobservatoryplanetarium/img/AOP logo/AOP_logo.jpg' class='img-fluid' alt='Responsive image'>
+     <a href='index.php'> <img src='img/AOP logo/AOP_logo.jpg' class='img-fluid' alt='Responsive image'> </a>
      </div>
      </div>
 
@@ -96,7 +100,7 @@ function management_committee_minutes(){
         ";
 
 
-$mcmstmt = $mysqli->prepare("SELECT management_com_year, management_com_month, management_com_day, management_com_hyper FROM management_committee_minutes");
+$mcmstmt = $mysqli->prepare("SELECT management_com_year, management_com_month, management_com_day, management_com_hyper FROM management_committee_minutes ORDER BY management_com_year, management_com_month ASC");
 
 $mcmstmt->execute();
 
@@ -154,6 +158,7 @@ echo "</div>
     
 
 }
+
 
 function corporateplan(){
     include("connection.php");
@@ -517,8 +522,7 @@ function footer(){
                         <li><a href='index.php'>Home</a></li>
                         <li><a href='sitemap.php'>Sitemap</a></li>
                       <li><a href='research.php#student_applications'>Student Applications</a></li>
-                          <li><a href='research.php'>Prices</a></li>
-                  <!--      <li><a href='downloads.php'>Downloads</a></li> -->
+                          
                     </ul>
                 </div>
                 <div class='col-sm-3 myCols'>
@@ -583,32 +587,7 @@ echo "
                     <h5>Support</h5>
                     <ul>
                         <li><a href='faq.php'>FAQ</a></li>
-                        <li><a href='support.php' data-toggle='modal' data-target='#infomodal_footer_helpdesk'>Helpdesk</a></li>
                         
-<div class='modal fade' id='infomodal_footer_helpdesk' tabindex='-1' role='dialog' aria-labelledby='infomodal_footertitle_helpdesk' aria-hidden='true'>
-  <div class='modal-dialog modal-dialog-centered text-center' role='document'>
-    <div class='modal-content text-center'>
-      <div class='modal-header text-center'>
-        <h4 class='modal-title text-center'>Helpdesk</h4>
-        <button type='button' class='close' data-dismiss='modal' aria-label='Close'>
-          <span aria-hidden='true'>&times;</span>
-        </button>
-      </div>
-      <div class='modal-body text-center'>
-    Have you spotted a problem with our website? Is a page not loading correctly or you don't have access to different links?
-    Social Media Problems?
-    <a href='https://outlook.office.com/?path=/mail/action/compose&to=armaghhelpdesk@gmail.com&subject=Online Helpdesk Request&body=Add+Your+Request+here' target='_top'><h5 class='card title text-center' style='color:black;'>EMAIL US!</h5></a>
-                   
-
- 
-      </div>
-      <div class='modal-footer text-center'>
-        
-  
-      </div>
-    </div>
-  </div>
-</div>
 
 
                     
@@ -628,7 +607,7 @@ echo "
                     </ul>
                 </div>
                 <div class='col-sm-3 myCols'>
-                    <h5>Legal</h5>
+                    <h5>Schools</h5>
                     <ul>
              <li><a href='#'><a href='careers/Education/risk_assessment.pdf'> Risk Assessment</a></li>
      <li> <a href='careers/Education/teacher_checklist.pdf'> Teacher Checklist</a></li>
@@ -664,10 +643,10 @@ echo "
         </button>
       </div>
       <div class='modal-body'>
-       <img src='img/snapcode.jpg' style='width: 450px; height: 400px;'>
+      <img src='img/snapcode.jpg' style='width: 450px; height: 400px;'>
       </div>
       
-    </div>
+      </div>
   </div>
 </div>
             
@@ -681,7 +660,6 @@ echo "
             <a href='https://twitter.com/ArmaghPlanet' class='twitter'><i class='fab fa-twitter' style='margin-top:30px;'></i></a>
             <a href='https://en-gb.facebook.com/armaghplanet/' class='facebook'><i class='fab fa-facebook-f'></i></a>
             <a href='https://armaghplanet.com/blog' class='facebook'><i class='fas fa-space-shuttle'></i><p style='font-size: 20px; font-family: Trattatello; margin-bottom:10px;'>Astronotes</p></a>
-           
             
         </div>
         <div class='footer-copyright'>
@@ -881,9 +859,6 @@ echo "    <div class='card text-white bg-dark my-4 text-center'>
 
 
 }
-
-
-
 
 
 

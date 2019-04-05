@@ -19,7 +19,7 @@ include("connection.php")
     <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/small-business.css" rel="stylesheet">
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
 
@@ -88,13 +88,16 @@ include("connection.php")
 </div> -->
       
    <div class="container">
-    
+    <div class="row">
+        <div class="col-12">
       <!-- Heading Row -->
       <img src="img/AOP logo/AOP_logo.jpg" class="img-fluid" alt="Responsive image">
+    </div></div>
   <?php 
   
-  
-  
+echo "
+
+  ";
   ?>
 
       <div class="row">
@@ -144,7 +147,7 @@ include("connection.php")
       
     <!-- Call to Action Well -->
     
-      <div class='card text-white bg-dark my-4 text-center'>
+      <div class='card text-white bg-dark my-4 text-center'  style='margin-bottom: 0%;'>
         <div class='card-body'> 
                
                
@@ -152,6 +155,21 @@ include("connection.php")
         </div>
       </div>
       
+      
+      
+      
+      
+      <div class='row'>
+<div class='col-12'>
+  <div class='jumbotron jumbotron-fluid' style='margin-bottom: 0%; margin-top: 0%;'>
+  <div class='container'>
+  <a href='https://armaghobservatoryplanetarium.ticketsolve.com/shows'>
+    <h1 class='display-4 text-center'>Book Tickets!</h1>
+    </a>
+  </div>
+</div>
+</div>
+</div>
       </div>
       
       
