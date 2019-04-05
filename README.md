@@ -1,5 +1,52 @@
 Web development project being undertaken by Nathan Leeman at Armagh Observatory & Planetarium.
 
+In the process of tidying my documentation and tracking of development
+--------------------------------------------------------------------------
+
+
+WHEN LIVE
+----------------------------------
+CLIMATE - BROUGHT ONLINE INTERNALLY - NEEDS EXTERNAL SUBDOMAIN - CLIMATE.ARMAGH.AC.UK
+
+Created "Under Construction" site. 
+
+Fix loading times - Google Analytics suggested we can save 5 seconds of load time
+
+Cookie Policy? - Document possibly needed Avi having a look at this
+
+arm.ac.uk redirect to armagh.ac.uk
+
+Changed image sizes - Speed Tests improved. Upload screenshots.
+
+
+
+
+04/02/2019
+
+Removed "whatever" appearing in search results as this was due to the an alt tag that hadn't been named correctly from the source of who created the template used.
+
+####OLD ARMAGH SITE####
+
+old.armagh.ac.uk pointing to odin page - Get code or blacknight to fix.
+
+Blacknight contacted
+
+####ARMAGHPLANET####
+
+armaghplanet.com - Code found. On Alienware PC. Backup code. Get FTP details.
+
+Create new pricing section on armagh.ac.uk
+
+Redirect armaghplanet.com pricing section to armagh.ac.uk pricing section.
+
+####Climate####
+
+Working internally
+
+Waiting for meeting to decide whether the old site stays or gets redesigned.
+
+Uses absolute addressing = Disaster
+
 Current Priority before the site goes live week starting 14/01/2019
 ---------------------------------------------------------------------
 
@@ -13,7 +60,7 @@ Current Priority before the site goes live week starting 14/01/2019
 Sidenote:
 
 function pagetitles();
-causing problems with mobiles loading rows from tables so I removed the method from these pages. Need to replace this function as it's pointless really and create a new layout standard for each title
+causing problems with mobiles loading rows from tables so I removed the method from these pages. Need to replace this function as it's pointless really and create a new title layout standard for each title
 
 Currently being worked on:
 --------------------------------
