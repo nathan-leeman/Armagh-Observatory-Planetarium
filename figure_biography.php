@@ -81,7 +81,7 @@ echo "
                             <p class='lead'> Married: $fig_married </p>
                                 <p class='lead'> Children: $fig_children </p>
                                     <p class='lead'> Distintions: $fig_distinctions </p>
-                                        <p> Biography: $fig_biography </p>
+                                        <p> Biogrpahy: $fig_biography </p>
                                             
 ";
 /*
