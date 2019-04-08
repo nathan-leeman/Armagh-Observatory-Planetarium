@@ -152,8 +152,8 @@ while ($row = $springshowsresult->fetch_assoc()){
 
 }
 
-echo " </div>";
+echo " </div></div>";
+
 
 footer();
-
 ?>
