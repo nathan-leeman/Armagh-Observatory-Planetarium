@@ -66,8 +66,40 @@ echo "
 </div>
 </div>
 
+<div class='row'>
+<div class='col-12'>
+
+<div class='jumbotron'>
+
+  <div class='container'>
+<a href='flipbooks.php'>
+<h1 class='display-4 text-center'>Interactive Flipbooks
+    </a>
+    
+</h1>
+</div>
+</div>
+
+</div>
+</div>
 
 
+<div class='row'>
+<div class='col-12'>
+
+<div class='jumbotron'>
+
+  <div class='container'>
+<a href='showtimes.php'>
+<h1 class='display-4 text-center'>Show times
+    </a>
+    
+</h1>
+</div>
+</div>
+
+</div>
+</div>
 
 
 
@@ -130,8 +162,8 @@ echo "
       <br> <p style='font-size: 1.25rem;'>Show Prices </p> 
  	 	 
  	 	 ";
- 	 	 
- 	 	 
+
+
                     $prices_stmt = $mysqli->prepare("SELECT prices_title, prices_cost FROM prices");
 
     $prices_stmt->execute();
@@ -146,7 +178,7 @@ echo "
                         $prices_cost = $row["prices_cost"];
 
 
- 	 	 
+
  	 	 echo "
  	 	 
  	 	 <div class='row'>
@@ -175,7 +207,7 @@ echo "
  	 	 
  	 	 ";
  	 	 }
- 	 	 
+
 
  	 	 echo "
 
