@@ -522,6 +522,7 @@ function footer(){
                         <li><a href='index.php'>Home</a></li>
                         <li><a href='sitemap.php'>Sitemap</a></li>
                       <li><a href='research.php#student_applications'>Student Applications</a></li>
+                      <li><a href='faq.php'>FAQ</a></li>
                           
                     </ul>
                 </div>
@@ -584,11 +585,31 @@ echo "
                     </ul>
                 </div>
                 <div class='col-sm-3 myCols'>
-                    <h5>Support</h5>
+                    <h5>Policies</h5>
                     <ul>
-                        <li><a href='faq.php'>FAQ</a></li>
                         
+                        <li><a href='https://en-gb.facebook.com/pg/armaghplanet/reviews/?ref=page_internal' data-toggle='modal' data-target='#giftshopmodal'>Gift Shop Product Submission </a></li>
 
+
+<div class='modal fade' id='giftshopmodal' tabindex='-1' role='dialog' aria-labelledby='exampleModalCenterTitle' aria-hidden='true'>
+  <div class='modal-dialog modal-dialog-centered' role='document'>
+    <div class='modal-content'>
+      <div class='modal-header'>
+        <h4 class='modal-title' id='exampleModalCenterTitle'>AOP Retail Buying Policy</h4>
+        <button type='button' class='close' data-dismiss='modal' aria-label='Close'>
+          <span aria-hidden='true'>&times;</span>
+        </button>
+      </div>
+      <div class='modal-body'>
+        Submission of Products for Consideration by Gift Shop: <br> <br> We are always looking for new and exciting products for our shops and we welcome applications to supply our shops. <br> <br> Enquiries in the first instance should be directed to the Education and Outreach Manager. </div>
+     <div class='modal-footer'>
+     Contact Reception: 028 3752 3689
+     
+     
+      </div>
+    </div>
+  </div>
+</div>
 
                     
 
