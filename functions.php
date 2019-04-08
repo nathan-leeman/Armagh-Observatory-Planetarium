@@ -557,9 +557,19 @@ function footer(){
     <a href='https://www.crocothemes.net'></a></div>
     <style>.mapouter{text-align:right;height:100%;width:100%;}.gmap_canvas
     {overflow:hidden;background:none!important;height:100%;width:100%;}</style>
+    <br>
+    <br>
+    
+   
     </div>
    
       </div>
+      
+       <div class='modal-footer'>
+        <a href='https://journeyplanner.translink.co.uk/web/XSLT_TRIP_REQUEST2?language=en'> 
+    <p style='color: black; margin-right: 50px;'>
+  Using Public Transport?   <br>Plan your journey: https://journeyplanner.translink.co.uk</p></a>
+       </div>
     </div>
   </div>
 </div>
