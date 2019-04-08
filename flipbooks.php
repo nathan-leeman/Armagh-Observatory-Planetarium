@@ -73,6 +73,8 @@ echo "  <div class='row'>
 ?>
 
 </div>
+
+
 <?php
 footer();
 

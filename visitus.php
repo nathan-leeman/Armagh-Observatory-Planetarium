@@ -84,22 +84,7 @@ echo "
 </div>
 
 
-<div class='row'>
-<div class='col-12'>
 
-<div class='jumbotron'>
-
-  <div class='container'>
-<a href='showtimes.php'>
-<h1 class='display-4 text-center'>Show times
-    </a>
-    
-</h1>
-</div>
-</div>
-
-</div>
-</div>
 
 
 
