@@ -33,7 +33,7 @@ include("connection.php");
 <?php
 navbar();
 
-$seasonarray = array("Spring - Tuesday ")
+$seasonarray = array("Spring - Tuesday ");
 
 
 
