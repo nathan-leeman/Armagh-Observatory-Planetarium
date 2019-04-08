@@ -82,17 +82,6 @@ echo "</div>
 
 
 
-      echo "<a href='published/published_index.php'>
-          <div class='jumbotron'>
-
-  <div class='container'>
-    <h1 class='display-4 text-center'>Staff & Student Pages</h1>
-
-
-      
-</div>
-</div>
-</a>";
       
       
       
