@@ -650,13 +650,19 @@ echo "
             </div>
         </div>
          <div class='social-networks' style='padding-bottom: 0px;'>
-       
+       <div class='row'>
+       <div class='col-12'>
         <a class='text-center' href='https://armaghobservatoryplanetarium.ticketsolve.com/shows?fbclid=IwAR0skRSdBi60Ef_0UbGMG5LFR2hcKZb3ERr11vpQ2juEz-ytW5Ip305a0NM'><img src='img/ticketsolve.png' style='width: 200px; 
             border-top-left-radius: calc(0.25rem - 1px); border-top-right-radius: calc(0.25rem - 1px);
              border-bottom-right-radius: calc(0.25rem - 1px);  border-bottom-left-radius: calc(0.25rem - 1px);'></a>
+             <a class='text-center' href='http://www.iop.org/policy/diversity/initiatives/juno/index.html'><img src='img/juno.png' style='width: 200px; 
+            border-top-left-radius: calc(0.25rem - 1px); border-top-right-radius: calc(0.25rem - 1px);
+             border-bottom-right-radius: calc(0.25rem - 1px);  border-bottom-left-radius: calc(0.25rem - 1px);'></a>
+             </div>
+             </div>
              </div>
         <div class='social-networks'>
-           </a>
+           
             
             
             <!-- Button trigger modal -->
