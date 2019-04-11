@@ -67,7 +67,22 @@ echo "
 </div>
 
 
+<div class='jumbotron' style='margin-top: 10px;'>
 
+  <div class='container'>
+  <a href='humanorrery.php'>
+  <h1 class='display-4'>Human Orrery
+</h1>
+    
+
+
+ </a>
+
+
+  
+
+</div>
+</div>
 
 
 
