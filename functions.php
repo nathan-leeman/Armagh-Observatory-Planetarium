@@ -742,6 +742,8 @@ function openingtimes(){
         Thursday: 10am-5pm <br>
         Friday: 10am-5pm <br>
         Saturday: 10am-5pm <br>
+        Special Hours/Holidays: Good Friday - Closed <br>
+        
       </div>
       <div class='modal-footer'>
         <button type='button' class='btn btn-secondary' data-dismiss='modal'>Close</button>
