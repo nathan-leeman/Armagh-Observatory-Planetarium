@@ -51,37 +51,24 @@ echo "  <div class='row'>
                       
                       </div>
                       </div>
+                        <div class='jumbotron'> 
+                      <div class='row' style='margin-bottom: 10px;'>
                       
-                      <div class='row'>
+                      <div class='col-6'>
                       
-                      <div class='col-12'>
+                      <img src=\"img/bovedy/Bovedy%20Postcard%20-%20no%20text.jpg\" class=\"img-fluid\" alt=\"Responsive image\">
+
+                      </div>
                       
-                      <div id='carouselExampleControls' class='carousel slide' data-ride='carousel'>
-  <div class='carousel-inner'>
-    <div class='carousel-item active' style='max-height: 650px;'>
-      <img src='img/bovedy/Bovedy%20Postcard%20-%20no%20text.jpg' class='d-block w-100' alt='...'>
-    </div>
-    <div class='carousel-item'  style='max-height: 650px;'>
-      <img src='img/bovedy/5x4%20approx%20300.%20H%20JPG.JPG' class='d-block w-100' alt='...'>
-    </div>
-    <div class='carousel-item'  style='max-height: 650px;'>
-      <img src='img/bovedy/for%20website.JPG' class='d-block w-100' alt='...'>
-    </div>
-  </div>
-  <a class='carousel-control-prev' href='#carouselExampleControls' role='button' data-slide='prev'>
-    <span class='carousel-control-prev-icon' aria-hidden='true'></span>
-    <span class='sr-only'>Previous</span>
-  </a>
-  <a class='carousel-control-next' href='#carouselExampleControls' role='button' data-slide='next'>
-    <span class='carousel-control-next-icon' aria-hidden='true'></span>
-    <span class='sr-only'>Next</span>
-  </a>
+                      
+                      <div class='col-6'>
+                      <img src=\"img/bovedy/for%20website.JPG\" class=\"img-fluid\" alt=\"Responsive image\">
+                      </div>
 </div>
-                      
-                      
 </div>
-                      
-</div>
+
+
+                    
                       
                       
                       <div class='jumbotron'>
@@ -101,17 +88,24 @@ echo "  <div class='row'>
 <p class='lead'>This Easter we will be celebrating this anniversary by hosting a range of events. The 25th April will see Senior Curator of Natural Science of the Ulster Museum, Dr. Mike Simms, hosting talks for people of all ages. In the evening time, An Evening with Bovedy will see astronomers and other professionals talking about the creation of the elements, the origins of the solar system and everything you need to know about meteorites.
 </p>
 <hr class='my-4'>
-<a href='https://armaghobservatoryplanetarium.ticketsolve.com/shows/1173592621/events/428217296'>
-<h3 class=' text-center'>Book tickets and find out more information</h3></a>
+<a href='img/bovedy/BOVEDY%20NEWS%20for%20PLANETARIUM%20(1).pdf'>
+<h3 class=' text-center'>Find out more information</h3></a>
   <hr class='my-4'>
   
 </div>
                       
                       
-                      
+                     <div class='jumbotron'>  
                      
-
-
+  <div class='row'>
+                      <div class='col-2'></div>
+                      <div class='col-8'>
+                      <img src=\"img/bovedy/5x4%20approx%20300.%20H%20JPG.JPG\" class=\"img-fluid\" alt=\"Responsive image\">
+                      </div>
+                      <div class='col-2'></div>
+                      
+</div>
+</div>
 
 
 
