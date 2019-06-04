@@ -211,7 +211,7 @@ echo "
 
 
   <div class='hovereffect-index-m'>     
-    <img class='card-img-top' src='$cardimg' alt='whatever'>
+    <img class='card-img-top' src='$cardimg'>
       
 
       <div class='overlay'>
